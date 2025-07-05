@@ -107,8 +107,6 @@ bot.on('text', (ctx) => {
   ctx.reply('دستور موردنظر را ارسال کنید. (مثال: /help)');
 });
 
-bot.launch();
-
 app.get("/", (req, res) => {
   res.send("Woo Messenger Bot is running...");
 });
