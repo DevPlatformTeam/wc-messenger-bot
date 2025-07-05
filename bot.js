@@ -119,7 +119,7 @@ app.use(bot.webhookCallback('/secret-path'));
 bot.telegram.setWebhook(`https://wc-messenger-bot.onrender.com/secret-path`);
 
 setInterval(() => {
-  require('node-fetch')('https://wc-messenger-bot.onrender.com/')
+  fetch('https://wc-messenger-bot.onrender.com/')
     .then(res => console.log('Self ping successful'))
     .catch(err => console.error('Self ping failed', err));
 }, 5 * 60 * 1000);
