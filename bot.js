@@ -118,6 +118,6 @@ app.listen(PORT, () => {
 });
 
 app.use(bot.webhookCallback('/secret-path'));
-bot.telegram.setWebhook(`https://YOUR_RENDER_DOMAIN/secret-path`);
+bot.telegram.setWebhook(`https://wc-messenger-bot.onrender.com/secret-path`);
 
 console.log('Bot is running...');
